@@ -1,13 +1,33 @@
 {
   "compilerOptions": {
-    "outDir": "./dist/",
-    "noImplicitAny": true,
-    "module": "es6",
-    "target": "es5",
-    "allowJs": true,
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2016", // or newer if your node.js version supports this
+    // "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "noImplicitThis": true,
     "moduleResolution": "node",
-    "declaration": true,
+    "strictNullChecks": false,
+    "resolveJsonModule": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "noImplicitReturns": true,
-    "noUnusedLocals": true
+    "skipLibCheck": true,
+    "declaration": false,
+    "noFallthroughCasesInSwitch": true,
+    "composite": false,
+    "noImplicitAny": true,
+    "lib": [
+      "dom",
+      "es2016",
+      "esnext.asynciterable"
+    ],
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "strict": false,
+    "experimentalDecorators": true,
+    "outDir": "dist",
+    "rootDir": "src",
   }
 }
